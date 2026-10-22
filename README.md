@@ -237,6 +237,7 @@ Prepare an experiment-specific training CSV from the source records, including t
 
 ### Data Description
 
+<img src="https://github.com/user-attachments/assets/4a0f4c30-bf83-495c-aa3d-78bfdba779df"  width="851" height="812" alt="Image"/>
 The selected inputs consist of **10 continuous variables and 5 categorical variables**. They describe borrower creditworthiness, repayment capacity, and loan terms available at origination.
 
 | Type | Feature | Description |
@@ -260,7 +261,7 @@ The selected inputs consist of **10 continuous variables and 5 categorical varia
 The implementation log-transforms `annual_inc` and `revol_bal`, handles zero-valued components of `dti`, `revol_util`, and `bc_util` as mixed modes, and rounds generated `credit_history_years` and `fico_range_high` values to integers during recovery. The transformer uses mixture-based normalization and mode indicators for numeric attributes, and one-hot spans for categorical attributes, including `emp_length`.
 
 ## Model Architecture
-
+<img width="893" height="555" alt="Image" src="https://github.com/user-attachments/assets/ca76303f-fc42-4eba-ab77-4b8eacb39c05" />
 Risk-VAE-CTABGAN consists of **feature transformation**, **Stage 1 Risk-VAE warm-up**, and **Stage 2 risk-aware adversarial minority generation**.
 
 ```text
