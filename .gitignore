@@ -1,0 +1,43 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# macOS metadata
+.DS_Store
+._*
+
+# Local datasets, fitted transformations, and generated outputs
+/data/
+/dataset/
+/preprocess/
+/samples/
+/checkpoints/
+/output/
+/~~~/
+*.csv
+*.tsv
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.log
